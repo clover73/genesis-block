@@ -243,7 +243,7 @@ def calculate_hashrate(nonce, last_updated):
 
 
 def print_block_info(options, hash_merkle_root):
-  print "algorithm: "    + (options.algorithm)
+  print "algorithm: "    + str(options.algorithm)
   print "merkle hash: "  + hash_merkle_root[::-1].encode('hex_codec')
   print "pszTimestamp: " + options.timestamp
   print "pubkey: "       + options.pubkey
